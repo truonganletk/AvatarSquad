@@ -1,1 +1,79 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #fff;
+  color: #0f0f0f;
+  letter-spacing: -0.2px;
+  margin: 0;
+  padding: 0;
+}
+
+header .header_content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 75px;
+  max-width: 1230px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  padding: 12px 50px;
+}
+header .header_content .header_logo {
+  margin-top: 4px;
+}
+header .header_content .header_logo img {
+  width: 142px;
+  margin-top: 4px;
+}
+header .header_content .header_nav {
+  display: flex;
+  margin-left: 24px;
+  align-items: center;
+}
+header .header_content .header_nav ul {
+  text-align: end;
+  padding-right: 12px;
+}
+header .header_content .header_nav ul li {
+  display: inline;
+  margin-right: 4px;
+  margin-left: 4px;
+  padding: 6px 8px;
+}
+header .header_content .header_nav ul li a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 15px;
+  font-weight: 500;
+}
+header .header_content .header_nav ul li a:hover {
+  color: #0075eb;
+}
+header .header_content .header_nav .header_social {
+  margin-right: 16px;
+}
+header .header_content .header_nav .header_social a {
+  width: 20px;
+  height: 20px;
+}
+header .header_content .header_nav .header_social a i {
+  color: #0075eb;
+  font-size: 28px;
+}
+header .header_content .header_nav .header_button button {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  background-color: #0075eb;
+  border: none;
+  box-shadow: 0 2px 0 0 hsla(0deg, 0%, 100%, 0.2);
+  padding: 10px 20px;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
