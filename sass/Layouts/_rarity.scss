@@ -1,0 +1,57 @@
+.rarity{
+    .rarity_content{
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .rarity_text{
+            max-width: 500px;
+            position: relative;
+            .rarity_logo{
+                position: absolute;
+                top: -15px;
+                width: 130px;
+            }
+            .paragraph{                
+                margin-bottom: 26px;
+            }
+            .rarity_block{
+                width: 320px;
+                margin-bottom: 8px;
+                padding: $pd-0 - 2 $pd-0 + 4;
+                border-radius: 3px;
+                background-color: $color-gray-2;
+                font-size: $fs-0 + 2;
+                line-height: 1.2em;
+                text-align: left;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &.back-lime{
+                    background-color: $color-green-0;
+                }
+                &.faint-lime{
+                    background-color: $color-green-1;
+                }
+                &.soft-lime{
+                    background-color: $color-green-2;
+                }
+                &.lime{
+                    background-color: $color-green-3;
+                }
+                &.dark-lime{
+                    background-color: $color-green-4;
+                }
+            }
+            p{
+                margin: 0;
+            }
+        }
+        .rarity_img{
+            img{
+                width: 644px;
+            }
+        }
+    }
+}

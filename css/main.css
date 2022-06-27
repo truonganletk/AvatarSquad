@@ -236,7 +236,7 @@ header .header_content .header_nav .header_social a i {
 }
 .roadmap .roadmap_content .roadmap_text .roadmap_logo {
   position: absolute;
-  top: 0;
+  top: -15px;
   width: 202px;
 }
 .roadmap .roadmap_content .roadmap_text .roadmap_block {
@@ -258,6 +258,60 @@ header .header_content .header_nav .header_social a i {
 .roadmap .roadmap_content .roadmap_text .roadmap_block p {
   opacity: 0.8;
   font-size: 16px;
+}
+
+.rarity .rarity_content {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rarity .rarity_content .rarity_text {
+  max-width: 500px;
+  position: relative;
+}
+.rarity .rarity_content .rarity_text .rarity_logo {
+  position: absolute;
+  top: -15px;
+  width: 130px;
+}
+.rarity .rarity_content .rarity_text .paragraph {
+  margin-bottom: 26px;
+}
+.rarity .rarity_content .rarity_text .rarity_block {
+  width: 320px;
+  margin-bottom: 8px;
+  padding: 10px 16px;
+  border-radius: 3px;
+  background-color: #f7f9fa;
+  font-size: 18px;
+  line-height: 1.2em;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rarity .rarity_content .rarity_text .rarity_block.back-lime {
+  background-color: #fbffe7;
+}
+.rarity .rarity_content .rarity_text .rarity_block.faint-lime {
+  background-color: #f3ffb6;
+}
+.rarity .rarity_content .rarity_text .rarity_block.soft-lime {
+  background-color: #eaff81;
+}
+.rarity .rarity_content .rarity_text .rarity_block.lime {
+  background-color: #cff800;
+}
+.rarity .rarity_content .rarity_text .rarity_block.dark-lime {
+  background-color: #bbe600;
+}
+.rarity .rarity_content .rarity_text p {
+  margin: 0;
+}
+.rarity .rarity_content .rarity_img img {
+  width: 644px;
 }
 
 .blue-button {
