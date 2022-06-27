@@ -1,0 +1,29 @@
+.creator{
+    background-color: $color-blue-0;
+    color: $color-white-0;
+    .creator_content{
+        width: 78%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .creator_text{
+            position: relative;
+            max-width: 500px;
+            .creator_logo{
+                position: absolute;                
+                top: -15px;
+                width: 161px;
+            }
+            .paragraph{
+                padding: $pd-2 0;
+            }
+            .green-button{
+                margin-top: $mg-2;
+            }
+        }
+        .creator_img{
+            margin-right: 50px;
+            width: 460px;
+        }
+    }
+}

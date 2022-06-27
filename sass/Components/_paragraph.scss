@@ -3,4 +3,8 @@
     font-size: $fs-0 + 2;
     line-height: 1.5em;
     font-weight: $fw-1;
+    &.large{
+        font-size: $fs-0 + 4;
+        line-height: 1.4em;
+    }
 }

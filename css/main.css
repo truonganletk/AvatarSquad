@@ -314,6 +314,36 @@ header .header_content .header_nav .header_social a i {
   width: 644px;
 }
 
+.creator {
+  background-color: #0075eb;
+  color: #fff;
+}
+.creator .creator_content {
+  width: 78%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.creator .creator_content .creator_text {
+  position: relative;
+  max-width: 500px;
+}
+.creator .creator_content .creator_text .creator_logo {
+  position: absolute;
+  top: -15px;
+  width: 161px;
+}
+.creator .creator_content .creator_text .paragraph {
+  padding: 8px 0;
+}
+.creator .creator_content .creator_text .green-button {
+  margin-top: 16px;
+}
+.creator .creator_content .creator_img {
+  margin-right: 50px;
+  width: 460px;
+}
+
 .blue-button {
   color: #fff;
   font-size: 15px;
@@ -381,6 +411,10 @@ header .header_content .header_nav .header_social a i {
   font-size: 18px;
   line-height: 1.5em;
   font-weight: 400;
+}
+.paragraph.large {
+  font-size: 20px;
+  line-height: 1.4em;
 }
 
 .link {
