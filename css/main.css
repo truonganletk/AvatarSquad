@@ -13,6 +13,14 @@ body {
   padding: 0;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: hsla(0deg, 0%, 100%, 0.7);
+  backdrop-filter: blur(5px);
+  width: 100%;
+}
 header .header_content {
   display: flex;
   justify-content: space-between;
@@ -66,7 +74,94 @@ header .header_content .header_nav .header_social a i {
   color: #0075eb;
   font-size: 28px;
 }
-header .header_content .header_nav .header_button button {
+
+.section.banner {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  margin-top: -75px;
+  padding-top: 250px;
+  padding-bottom: 170px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+}
+.section.banner .banner_content {
+  position: relative;
+  max-width: 650px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.section.banner .banner_content .banner_logo {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  display: block;
+}
+.section.banner .banner_content .banner_paragraph {
+  max-width: 550px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+.section.banner .banner_content .banner_paragraph p {
+  font-size: 24px;
+  line-height: 1.4em;
+  font-weight: bold;
+}
+.section.banner .banner_content .banner_img1 {
+  position: absolute;
+  right: -550px;
+  bottom: -240px;
+  z-index: -1;
+  transform: rotate(-14deg);
+}
+.section.banner .banner_content .banner_img2 {
+  position: absolute;
+  left: -392px;
+  top: -428px;
+  z-index: -1;
+  transform: rotate(-14deg);
+}
+.section.banner .banner_content .banner_img3 {
+  position: absolute;
+  top: 335px;
+  right: 40px;
+  z-index: -1;
+  transform: rotate(11deg);
+}
+.section.banner .banner_content .banner_img4 {
+  position: absolute;
+  top: -366px;
+  right: 243px;
+  z-index: -1;
+  transform: rotate(29deg);
+}
+.section.banner .banner_content .banner_img5 {
+  position: absolute;
+  top: -183px;
+  right: -264px;
+  z-index: -1;
+  transform: rotate(-9deg);
+}
+.section.banner .banner_content .banner_img6 {
+  position: absolute;
+  left: -195px;
+  z-index: -1;
+  transform: rotate(11deg);
+}
+.section.banner .banner_content .banner_img {
+  display: block;
+  width: 100%;
+  max-width: none;
+}
+
+.blue-button {
   color: #fff;
   font-size: 15px;
   font-weight: 500;
@@ -76,4 +171,48 @@ header .header_content .header_nav .header_button button {
   box-shadow: 0 2px 0 0 hsla(0deg, 0%, 100%, 0.2);
   padding: 10px 20px;
   cursor: pointer;
+}
+.blue-button:hover {
+  background-color: #0259b1;
+}
+
+.green-button {
+  color: #0f0f0f;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  background-color: #cff800;
+  border: none;
+  box-shadow: 0 2px 0 0 hsla(0deg, 0%, 100%, 0.2);
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.green-button:hover {
+  background-color: #bbe600;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1230px;
+  min-height: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+  justify-content: center;
+}
+
+.section {
+  position: relative;
+  z-index: 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.heading {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 90px;
+  line-height: 1.2em;
 }/*# sourceMappingURL=main.css.map */

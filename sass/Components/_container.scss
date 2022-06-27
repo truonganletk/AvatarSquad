@@ -1,0 +1,11 @@
+.container{
+    display: block;
+    width: 100%;
+    max-width: 1230px;
+    min-height: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $pd-3;
+    padding-left: $pd-3;
+    justify-content: center;
+}

@@ -1,0 +1,25 @@
+.blue-button{
+    @include textStyle($color-white-0,$fs-0 - 1,$fw-0);
+    border-radius: 8px;
+    background-color: #0075eb;
+    border: none;
+    box-shadow: 0 2px 0 0 hsl(0deg 0% 100% / 20%);
+    padding: $pd-2 + 2 $pd-7;
+    cursor: pointer;
+    &:hover{
+        background-color: $color-blue-3;
+    }
+}
+
+.green-button{
+    @include textStyle($color-black-0,$fs-0 + 2,$fw-0);
+    border-radius: 8px;
+    background-color: $color-green-3;
+    border: none;
+    box-shadow: 0 2px 0 0 hsl(0deg 0% 100% / 20%);
+    padding: $pd-2 + 2 $pd-7;
+    cursor: pointer;
+    &:hover{
+        background-color: $color-green-4;
+    }
+}
