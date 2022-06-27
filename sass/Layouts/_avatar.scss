@@ -1,0 +1,27 @@
+.avatar{
+    background-color: $color-green-3;
+    overflow: hidden;
+    .avatar_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .avatar_text{
+            position: relative;
+            max-width: 500px;
+            margin-right: $mg-5;
+            .paragraph{
+                margin-bottom: $mg-4;
+            }
+            .blue-button{
+                font-size: $fs-0 + 2;
+            }
+        }
+        .avatar_img{
+            position: relative;
+            display: block;
+            width: 110%;
+            max-width: 110%;
+            margin: -418px auto;
+        }
+    }
+}

@@ -384,6 +384,34 @@ header .header_content .header_nav .header_social a i {
   transform: rotate(180deg);
 }
 
+.avatar {
+  background-color: #cff800;
+  overflow: hidden;
+}
+.avatar .avatar_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.avatar .avatar_content .avatar_text {
+  position: relative;
+  max-width: 500px;
+  margin-right: 100px;
+}
+.avatar .avatar_content .avatar_text .paragraph {
+  margin-bottom: 40px;
+}
+.avatar .avatar_content .avatar_text .blue-button {
+  font-size: 18px;
+}
+.avatar .avatar_content .avatar_img {
+  position: relative;
+  display: block;
+  width: 110%;
+  max-width: 110%;
+  margin: -418px auto;
+}
+
 .blue-button {
   color: #fff;
   font-size: 15px;
@@ -392,7 +420,7 @@ header .header_content .header_nav .header_social a i {
   background-color: #0075eb;
   border: none;
   box-shadow: 0 2px 0 0 hsla(0deg, 0%, 100%, 0.2);
-  padding: 10px 20px;
+  padding: 10px 32px;
   cursor: pointer;
 }
 .blue-button:hover {
