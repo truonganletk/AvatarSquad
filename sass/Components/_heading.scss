@@ -3,4 +3,10 @@
     margin-bottom: $mg-1;
     font-size: $fs-2;
     line-height: 1.2em;
+    font-weight: 700;
+    &.h2{
+        margin-bottom: $mg-1 - 4;
+        font-size: $fs-3;
+        line-height: 1.2em;
+    }
 }

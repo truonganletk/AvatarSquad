@@ -161,6 +161,35 @@ header .header_content .header_nav .header_social a i {
   max-width: none;
 }
 
+.about {
+  background-color: #0075eb;
+  color: #fff;
+}
+.about .about_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .about_content .about_text {
+  position: relative;
+  max-width: 500px;
+}
+.about .about_content .about_text .about_logo {
+  position: absolute;
+  left: 27px;
+  top: 45px;
+  width: 284px;
+}
+.about .about_content .about_text .paragraph {
+  padding: 15px 0;
+}
+.about .about_content .about_text .green-button {
+  margin-top: 16px;
+}
+.about .about_content .about_img {
+  margin-right: 50px;
+}
+
 .blue-button {
   color: #fff;
   font-size: 15px;
@@ -184,7 +213,7 @@ header .header_content .header_nav .header_social a i {
   background-color: #cff800;
   border: none;
   box-shadow: 0 2px 0 0 hsla(0deg, 0%, 100%, 0.2);
-  padding: 10px 20px;
+  padding: 10px 32px;
   cursor: pointer;
 }
 .green-button:hover {
@@ -215,4 +244,28 @@ header .header_content .header_nav .header_social a i {
   margin-bottom: 24px;
   font-size: 90px;
   line-height: 1.2em;
+  font-weight: 700;
+}
+.heading.h2 {
+  margin-bottom: 20px;
+  font-size: 46px;
+  line-height: 1.2em;
+}
+
+.paragraph {
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+.link {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(207, 248, 0, 0.5);
+  transition: border-color 200ms ease, color 200ms ease;
+  color: #cff800;
+}
+.link:hover {
+  border-bottom-color: #cff800;
+  color: #bbe600;
 }/*# sourceMappingURL=main.css.map */

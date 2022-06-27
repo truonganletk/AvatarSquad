@@ -1,0 +1,28 @@
+.about{
+    background-color: $color-blue-0;
+    color: $color-white-0;
+    .about_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .about_text{
+            position: relative;
+            max-width: 500px;
+            .about_logo{
+                position: absolute;
+                left: 27px;
+                top: 45px;
+                width: 284px;
+            }
+            .paragraph{
+                padding: $pd-7 - 5 0;
+            }
+            .green-button{
+                margin-top: $mg-2;
+            }
+        }
+        .about_img{
+            margin-right: 50px;
+        }
+    }
+}
