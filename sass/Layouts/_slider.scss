@@ -1,0 +1,17 @@
+.slider{
+    overflow: hidden;
+    .slider_row{
+        width: 200%;
+        margin-bottom: $mg-2;
+        .slider_list{
+            display: grid;
+            gap: 16px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            .slider_item{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -190,6 +190,22 @@ header .header_content .header_nav .header_social a i {
   margin-right: 50px;
 }
 
+.slider {
+  overflow: hidden;
+}
+.slider .slider_row {
+  width: 200%;
+  margin-bottom: 16px;
+}
+.slider .slider_row .slider_list {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.slider .slider_row .slider_list .slider_item img {
+  width: 100%;
+}
+
 .blue-button {
   color: #fff;
   font-size: 15px;
