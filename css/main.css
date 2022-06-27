@@ -412,6 +412,69 @@ header .header_content .header_nav .header_social a i {
   margin: -418px auto;
 }
 
+footer .footer_grid {
+  display: grid;
+  justify-items: start;
+  grid-column-gap: 80px;
+  grid-row-gap: 64px;
+  grid-template-columns: 2fr 1fr;
+}
+footer .footer_grid .footer_mainbox {
+  max-width: 450px;
+}
+footer .footer_grid .footer_mainbox .footer_logo {
+  width: 156px;
+}
+footer .footer_grid .footer_link {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+footer .footer_grid .footer_link h5 {
+  color: #99a4af;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 16px;
+}
+footer .footer_grid .footer_link a {
+  display: block;
+  margin-bottom: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: color 200ms ease-in-out;
+  color: #0f0f0f;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+footer .footer_grid .footer_link a:hover {
+  color: #626a72;
+}
+footer .footer_grid .footer_copyright {
+  max-width: 500px;
+}
+footer .footer_grid .footer_social a {
+  display: inline-block;
+}
+footer .footer_grid .footer_social a i {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  font-size: 24px;
+  color: #0075eb;
+  border: 1px solid #dfeeff;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: background-color 200ms ease, color 200ms ease;
+  display: inline-block;
+}
+footer .footer_grid .footer_social a i:hover {
+  background-color: #dfeeff;
+}
+
 .blue-button {
   color: #fff;
   font-size: 15px;
@@ -489,6 +552,11 @@ header .header_content .header_nav .header_social a i {
   font-size: 20px;
   line-height: 1.4em;
 }
+.paragraph.small {
+  opacity: 0.75;
+  font-size: 14px;
+  line-height: 1.4em;
+}
 
 .link {
   text-decoration: none;
@@ -499,4 +567,12 @@ header .header_content .header_nav .header_social a i {
 .link:hover {
   border-bottom-color: #cff800;
   color: #bbe600;
+}
+.link.blue {
+  border-bottom-color: #9dcbf8;
+  color: #0075eb;
+}
+.link.blue:hover {
+  border-bottom-color: #0075eb;
+  color: #0259b1;
 }/*# sourceMappingURL=main.css.map */
