@@ -28,6 +28,7 @@ function transX_left() {
       }
     }
 }
+
   
-  window.addEventListener("scroll", transX_right);
-  window.addEventListener("scroll", transX_left);
+window.addEventListener("scroll", transX_right);
+window.addEventListener("scroll", transX_left);

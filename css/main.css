@@ -206,6 +206,60 @@ header .header_content .header_nav .header_social a i {
   width: 100%;
 }
 
+.roadmap {
+  background-color: #dfeeff;
+}
+.roadmap .roadmap_content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.roadmap .roadmap_content .roadmap_img {
+  height: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 140px;
+}
+.roadmap .roadmap_content .roadmap_img img {
+  width: 382px;
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-bottom: 16px;
+  margin-left: auto;
+}
+.roadmap .roadmap_content .roadmap_text {
+  max-width: 500px;
+  position: relative;
+}
+.roadmap .roadmap_content .roadmap_text .roadmap_logo {
+  position: absolute;
+  top: 0;
+  width: 202px;
+}
+.roadmap .roadmap_content .roadmap_text .roadmap_block {
+  margin-bottom: 24px;
+  padding: 20px 24px 8px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+.roadmap .roadmap_content .roadmap_text .roadmap_block .block_title {
+  margin-bottom: 4px;
+  font-size: 22px;
+  line-height: 1.4em;
+}
+.roadmap .roadmap_content .roadmap_text .roadmap_block .block_title span {
+  margin-right: 4px;
+  color: #0075eb;
+  font-size: 18px;
+}
+.roadmap .roadmap_content .roadmap_text .roadmap_block p {
+  opacity: 0.8;
+  font-size: 16px;
+}
+
 .blue-button {
   color: #fff;
   font-size: 15px;
