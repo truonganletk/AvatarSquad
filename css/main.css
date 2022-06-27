@@ -344,6 +344,46 @@ header .header_content .header_nav .header_social a i {
   width: 460px;
 }
 
+.questions .questions_content {
+  max-width: 800px;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-left: auto;
+  text-align: center;
+}
+.questions .questions_content h2 {
+  margin-bottom: 40px;
+}
+.questions .questions_content .list_questions {
+  overflow: hidden;
+}
+.questions .questions_content .list_questions .questions_block {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 28px 28px 16px;
+  border-radius: 6px;
+  background-color: #f1f8ff;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+.questions .questions_content .list_questions .questions_block .question {
+  display: flex;
+  justify-content: space-between;
+}
+.questions .questions_content .list_questions .questions_block .question img {
+  transform: rotate(0);
+  transition: transform 0.3s ease-out;
+}
+.questions .questions_content .list_questions .questions_block .answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.questions .questions_content .list_questions .questions_block.active .question img {
+  transform: rotate(180deg);
+}
+
 .blue-button {
   color: #fff;
   font-size: 15px;
@@ -404,6 +444,11 @@ header .header_content .header_nav .header_social a i {
   margin-bottom: 20px;
   font-size: 46px;
   line-height: 1.2em;
+}
+.heading.h4 {
+  margin-bottom: 4px;
+  font-size: 24px;
+  line-height: 1.4em;
 }
 
 .paragraph {

@@ -32,3 +32,18 @@ function transX_left() {
   
 window.addEventListener("scroll", transX_right);
 window.addEventListener("scroll", transX_left);
+
+
+var questions = document.getElementsByClassName("questions_block");
+
+for ( var i = 0; i < questions.length; i++) {
+  questions[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.getElementsByClassName("answer")[0];
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
