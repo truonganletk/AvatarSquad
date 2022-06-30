@@ -320,13 +320,14 @@ header .header_content .nav_menu_button i {
   background-color: #dfeeff;
 }
 .roadmap .roadmap_content {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   position: relative;
 }
 .roadmap .roadmap_content .roadmap_img {
+  width: 48%;
   height: 100%;
   position: -webkit-sticky;
   position: sticky;
@@ -341,6 +342,7 @@ header .header_content .nav_menu_button i {
   margin-left: auto;
 }
 .roadmap .roadmap_content .roadmap_text {
+  width: 48%;
   max-width: 500px;
   position: relative;
 }
@@ -368,6 +370,17 @@ header .header_content .nav_menu_button i {
 .roadmap .roadmap_content .roadmap_text .roadmap_block p {
   opacity: 0.8;
   font-size: 16px;
+}
+@media (max-width: 768px) {
+  .roadmap .roadmap_content .roadmap_img {
+    display: none;
+  }
+  .roadmap .roadmap_content .roadmap_text {
+    width: 100%;
+  }
+  .roadmap .roadmap_content .roadmap_text .roadmap_logo {
+    display: none;
+  }
 }
 
 .rarity .rarity_content {

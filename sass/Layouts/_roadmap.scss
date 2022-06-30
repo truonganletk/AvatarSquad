@@ -1,12 +1,13 @@
 .roadmap{
     background-color: $color-blue-4;
     .roadmap_content{
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         position: relative;
         .roadmap_img{
+            width: 48%;
             height: 100%;
             position: -webkit-sticky;
             position: sticky;
@@ -21,6 +22,7 @@
             }
         }
         .roadmap_text{
+            width: 48%;
             max-width: 500px;
             position: relative;
             .roadmap_logo{
@@ -46,6 +48,19 @@
                 p{
                     opacity: 0.8;
                     font-size: $fs-0;
+                }
+            }
+        }        
+    }
+    @include respond-to('md'){
+        .roadmap_content{
+            .roadmap_img{
+                display: none;
+            }
+            .roadmap_text{
+                width: 100%;
+                .roadmap_logo{
+                    display: none;
                 }
             }
         }
