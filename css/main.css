@@ -305,6 +305,15 @@ header .header_content .nav_menu_button i {
 }
 .slider .slider_row .slider_list .slider_item img {
   width: 100%;
+  display: block;
+}
+@media (max-width: 768px) {
+  .slider .slider_row {
+    width: 300%;
+  }
+  .slider .slider_row .slider_list .slider_item img {
+    width: 200px;
+  }
 }
 
 .roadmap {

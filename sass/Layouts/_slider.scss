@@ -10,6 +10,19 @@
             .slider_item{
                 img{
                     width: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+    @include respond-to('md'){
+        .slider_row{
+            width: 300%;
+            .slider_list{
+                .slider_item{
+                    img{
+                        width: 200px;
+                    }
                 }
             }
         }
