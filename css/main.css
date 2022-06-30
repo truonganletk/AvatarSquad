@@ -549,6 +549,11 @@ header .header_content .nav_menu_button i {
 .questions .questions_content .list_questions .questions_block.active .question img {
   transform: rotate(180deg);
 }
+@media (max-width: 768px) {
+  .questions .questions_content .list_questions .questions_block .answer p {
+    font-size: 15px;
+  }
+}
 
 .avatar {
   background-color: #cff800;
@@ -723,6 +728,9 @@ footer .footer_grid .footer_social a i:hover {
     margin-bottom: 16px;
     font-size: 36px;
     line-height: 1.2em;
+  }
+  .heading.h4 {
+    font-size: 20px;
   }
 }
 

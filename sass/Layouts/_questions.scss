@@ -43,4 +43,17 @@
         }
         
     }
+    @include respond-to('md') {
+        .questions_content{
+            .list_questions{
+                .questions_block{
+                    .answer{
+                        p{
+                            font-size: $fs-0 - 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
