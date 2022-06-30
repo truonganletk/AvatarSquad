@@ -593,6 +593,9 @@ header .header_content .nav_menu_button i {
 footer {
   background-color: #f7f9fa;
 }
+footer.section {
+  padding-bottom: 50px;
+}
 footer .footer_grid {
   display: grid;
   justify-items: start;
@@ -636,6 +639,8 @@ footer .footer_grid .footer_link a:hover {
 }
 footer .footer_grid .footer_copyright {
   max-width: 500px;
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
 footer .footer_grid .footer_social a {
   display: inline-block;
@@ -654,6 +659,22 @@ footer .footer_grid .footer_social a i {
 }
 footer .footer_grid .footer_social a i:hover {
   background-color: #dfeeff;
+}
+@media (max-width: 992px) {
+  footer .footer_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  footer .footer_grid {
+    grid-template-columns: 1fr;
+    grid-column-gap: 80px;
+    grid-row-gap: 32px;
+  }
+  footer .footer_grid .footer_copyright {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
 }
 
 .blue-button {
