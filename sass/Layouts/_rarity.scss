@@ -1,11 +1,12 @@
 .rarity{
     .rarity_content{
-        width: 75%;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
         .rarity_text{
+            width: 48%;
             max-width: 500px;
             position: relative;
             .rarity_logo{
@@ -49,8 +50,29 @@
             }
         }
         .rarity_img{
+            width: 48%;
             img{
                 width: 644px;
+            }
+        }
+    }
+    @include respond-to('md') {
+        .rarity_content{
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            .rarity_text{
+                width: 100%;
+                text-align: center;  
+                .rarity_logo{
+                    display: none;
+                }              
+                .rarity_block{
+                    width: 100%;
+                }
+            }
+            .rarity_img{
+                width: 100%;
+                margin-bottom: $mg-4;
             }
         }
     }
