@@ -55,14 +55,12 @@ header .header_content .header_nav .drop_menu {
 }
 header .header_content .header_nav .drop_menu li {
   display: inline;
-  margin-right: 4px;
-  margin-left: 4px;
   padding: 6px 8px;
 }
 header .header_content .header_nav .drop_menu li a {
   text-decoration: none;
   color: #222222;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
 }
 header .header_content .header_nav .drop_menu li a:hover {
@@ -80,8 +78,8 @@ header .header_content .header_nav .header_social a i {
   font-size: 28px;
 }
 header .header_content .header_nav .blue-button {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 header .header_content .nav_menu_button {
   width: 56px;
@@ -93,7 +91,7 @@ header .header_content .nav_menu_button {
 header .header_content .nav_menu_button i {
   font-size: 32px;
 }
-@media screen and (max-width: 800px) {
+@media (max-width: 768px) {
   header .header_content .header_nav {
     position: absolute;
     background-color: #fff;
@@ -106,9 +104,9 @@ header .header_content .nav_menu_button i {
     padding: 0 24px;
     padding-bottom: 40px;
     padding-top: 16px;
+    display: none;
     overflow: hidden;
     transition: 0.5s;
-    transform: translateY(-200%);
   }
   header .header_content .header_nav .drop_menu li {
     display: block;
@@ -134,7 +132,7 @@ header .header_content .nav_menu_button i {
     font-size: 32px;
   }
   header .header_content .header_nav.active {
-    transform: translateY(0);
+    display: block;
   }
   header .header_content .nav_menu_button {
     display: block;
