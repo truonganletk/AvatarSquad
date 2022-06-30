@@ -15,6 +15,7 @@ header{
         margin-left: auto;
         align-items: center;
         padding: $pd-0 $pd-3;
+        position: relative;
         .header_logo{
             margin-top: $mg-0;
             img{
@@ -24,9 +25,9 @@ header{
         }
         .header_nav{
             display: flex;
-            margin-left: $mg-1;
             align-items: center;
-            ul{
+            .drop_menu{
+                padding: 0;
                 text-align: end;
                 padding-right: $pd-0;
                 li{
@@ -54,6 +55,78 @@ header{
                     }
                 }
             }
+            .blue-button{
+                padding-right: 20px;
+                padding-left: 20px;
+            }
         }
+        .nav_menu_button{
+            width: 56px;
+            height: 56px;
+            line-height: 70px;
+            text-align: center;
+            display: none;
+            i{
+                font-size: $fs-4;
+            }
+        }
+    }
+    @media screen and (max-width:800px) {
+        .header_content{
+            .header_nav{
+                position: absolute;
+                background-color: $color-white-0;
+                width: 100%;
+                top:100%;
+                left: 0;
+                text-align: center;
+                justify-content: center;
+                flex-direction: column;                
+                padding: 0 $mg-1;
+                padding-bottom: $mg-4;
+                padding-top: $mg-2;
+                //display: none;
+                overflow: hidden;
+                transition: 0.5s;
+                transform: translateY(-200%);
+                .drop_menu{
+                    li{
+                        display: block;
+                        text-align: center;                        
+                        padding: 12px;
+                        a{
+                            font-size: $fs-0 + 2;
+                        }
+                    }
+                }
+                .header_button{
+                    margin-top: $mg-1;
+                    width: 100%;
+                    .blue-button{
+                        width: 100%;
+                        font-size: $fs-0 + 2;
+                        padding: $pd-0 $pd-0 +4;
+                    }
+                }
+                .header_social{
+                    a{
+                        margin:$mg-2 - 2;
+                        i{
+                            font-size: $fs-4;
+                        }
+                    }
+                }
+                &.active{
+                    //display: block;
+                    transform: translateY(0);
+                }
+            }
+            .nav_menu_button{
+                display: block;
+                background-color: transparent;
+                border: transparent;
+                cursor: pointer;
+            }
+        }        
     }
 }

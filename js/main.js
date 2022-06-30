@@ -47,3 +47,11 @@ for ( var i = 0; i < questions.length; i++) {
     } 
   });
 }
+
+
+var navbtn = document.getElementsByClassName("nav_menu_button")[0];
+var headernav = document.getElementsByClassName("header_nav")[0];
+
+navbtn.addEventListener("click", function() {
+  headernav.classList.toggle("active");
+});

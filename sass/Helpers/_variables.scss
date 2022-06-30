@@ -28,6 +28,7 @@ $fs-0:16px;
 $fs-1:24px;
 $fs-2:90px;
 $fs-3:46px;
+$fs-4:32px;
 
 //font weight
 
@@ -56,3 +57,11 @@ $pd-6:96px;
 $pd-7:20px;
 $pd-8:32px;
 
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
