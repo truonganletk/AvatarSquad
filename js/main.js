@@ -23,7 +23,7 @@ function transX_left() {
       var elementVisible = 150;
   
       if (elementTop < windowHeight - elementVisible) {
-        var trx=-300-elementTop/2;
+        var trx=-350-elementTop/2;
         reveals[i].style.transform = "translateX("+trx+"px)";
       }
     }
