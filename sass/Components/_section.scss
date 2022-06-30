@@ -3,4 +3,8 @@
     z-index: 0;
     padding-top: $pd-6;
     padding-bottom: $pd-6;
+    @include respond-to('md'){
+        padding-bottom: $pd-3 + 10;
+        padding-top: $pd-3 + 10;
+    }
 }

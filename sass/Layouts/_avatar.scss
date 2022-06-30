@@ -8,7 +8,6 @@
         .avatar_text{
             position: relative;
             max-width: 500px;
-            margin-right: $mg-5;
             .paragraph{
                 margin-bottom: $mg-4;
             }
@@ -22,6 +21,16 @@
             width: 110%;
             max-width: 110%;
             margin: -418px auto;
+        }
+    }
+    @include respond-to('md'){
+        .avatar_content{
+            .avatar_text{
+                width: 100%;
+            }
+            .avatar_img{
+                display: none;
+            }
         }
     }
 }

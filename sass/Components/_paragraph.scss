@@ -17,6 +17,7 @@
         line-height: 1.4em;
     }
     @include respond-to('md') {
+        font-size: $fs-0 + 1;
         &.large{
             font-size: $fs-0 + 4;
             line-height: 1.4em;

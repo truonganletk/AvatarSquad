@@ -567,7 +567,6 @@ header .header_content .nav_menu_button i {
 .avatar .avatar_content .avatar_text {
   position: relative;
   max-width: 500px;
-  margin-right: 100px;
 }
 .avatar .avatar_content .avatar_text .paragraph {
   margin-bottom: 40px;
@@ -581,6 +580,14 @@ header .header_content .nav_menu_button i {
   width: 110%;
   max-width: 110%;
   margin: -418px auto;
+}
+@media (max-width: 768px) {
+  .avatar .avatar_content .avatar_text {
+    width: 100%;
+  }
+  .avatar .avatar_content .avatar_img {
+    display: none;
+  }
 }
 
 footer {
@@ -702,6 +709,12 @@ footer .footer_grid .footer_social a i:hover {
   padding-top: 96px;
   padding-bottom: 96px;
 }
+@media (max-width: 768px) {
+  .section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
 
 .heading {
   margin: 0;
@@ -754,6 +767,9 @@ footer .footer_grid .footer_social a i:hover {
   line-height: 1.4em;
 }
 @media (max-width: 768px) {
+  .paragraph {
+    font-size: 17px;
+  }
   .paragraph.large {
     font-size: 20px;
     line-height: 1.4em;
