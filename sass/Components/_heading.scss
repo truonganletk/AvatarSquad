@@ -1,6 +1,6 @@
 .heading{
     margin: 0;
-    margin-bottom: $mg-1;
+    margin-bottom: $mg-0 + 1;
     font-size: $fs-2;
     line-height: 1.2em;
     font-weight: 700;
@@ -13,5 +13,8 @@
         margin-bottom: $mg-0;
         font-size: $fs-1;
         line-height: 1.4em;
+    }
+    @include respond-to('md') {
+        font-size: $fs-5;
     }
 }

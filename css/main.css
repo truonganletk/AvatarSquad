@@ -176,11 +176,6 @@ header .header_content .nav_menu_button i {
   margin: 0 auto;
   margin-bottom: 24px;
 }
-.section.banner .banner_content .banner_paragraph p {
-  font-size: 24px;
-  line-height: 1.4em;
-  font-weight: bold;
-}
 .section.banner .banner_content .banner_img1 {
   position: absolute;
   right: -550px;
@@ -226,6 +221,27 @@ header .header_content .nav_menu_button i {
   display: block;
   width: 100%;
   max-width: none;
+}
+@media (max-width: 768px) {
+  .section.banner .banner_content .banner_logo {
+    display: none;
+  }
+  .section.banner .banner_content .banner_img3 {
+    top: 305px;
+  }
+  .section.banner .banner_content .banner_img4 {
+    top: -316px;
+  }
+  .section.banner .banner_content .banner_img5 {
+    right: -104px;
+  }
+  .section.banner .banner_content .banner_img6 {
+    left: -108px;
+    top: 133px;
+  }
+  .section.banner .banner_content .banner_img {
+    width: 200px;
+  }
 }
 
 .about {
@@ -586,6 +602,11 @@ footer .footer_grid .footer_social a i:hover {
   padding-left: 50px;
   justify-content: center;
 }
+@media (max-width: 992px) {
+  .container {
+    padding: 0 30px;
+  }
+}
 
 .section {
   position: relative;
@@ -596,7 +617,7 @@ footer .footer_grid .footer_social a i:hover {
 
 .heading {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 5px;
   font-size: 90px;
   line-height: 1.2em;
   font-weight: 700;
@@ -611,6 +632,11 @@ footer .footer_grid .footer_social a i:hover {
   font-size: 24px;
   line-height: 1.4em;
 }
+@media (max-width: 768px) {
+  .heading {
+    font-size: 60px;
+  }
+}
 
 .paragraph {
   margin-bottom: 16px;
@@ -622,10 +648,29 @@ footer .footer_grid .footer_social a i:hover {
   font-size: 20px;
   line-height: 1.4em;
 }
+.paragraph.extra-large {
+  font-size: 24px;
+  line-height: 1.4em;
+}
 .paragraph.small {
   opacity: 0.75;
   font-size: 14px;
   line-height: 1.4em;
+}
+@media (max-width: 768px) {
+  .paragraph.large {
+    font-size: 20px;
+    line-height: 1.4em;
+  }
+  .paragraph.extra-large {
+    font-size: 21px;
+    line-height: 1.4em;
+  }
+  .paragraph.small {
+    opacity: 0.75;
+    font-size: 14px;
+    line-height: 1.4em;
+  }
 }
 
 .link {

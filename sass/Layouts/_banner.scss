@@ -28,11 +28,6 @@
         .banner_paragraph{
             max-width: 550px;
             margin: 0 auto;
-            p{
-                font-size: $fs-1;
-                line-height: 1.4em;
-                font-weight: bold;
-            }
             margin-bottom: $mg-1;
         }
         .banner_img1{
@@ -82,5 +77,27 @@
             max-width: none;
         }
     }
-    
+    @include respond-to('md') {
+        .banner_content{
+            .banner_logo{
+                display: none;
+            }
+            .banner_img3{
+                top: 305px;
+            }
+            .banner_img4{
+                top: -316px;
+            }
+            .banner_img5{
+                right: -104px;
+            }
+            .banner_img6{
+                left: -108px;
+                top: 133px;
+            }
+            .banner_img{
+                width: 200px;
+            }
+        }
+    }
 }

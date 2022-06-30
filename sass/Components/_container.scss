@@ -8,4 +8,7 @@
     padding-right: $pd-3;
     padding-left: $pd-3;
     justify-content: center;
+    @include respond-to('lg') {
+        padding: 0 $pd-8 - 2;
+    }
 }

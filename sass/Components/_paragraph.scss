@@ -7,9 +7,28 @@
         font-size: $fs-0 + 4;
         line-height: 1.4em;
     }
+    &.extra-large{
+        font-size: $fs-1;
+        line-height: 1.4em;
+    }
     &.small{
         opacity: 0.75;
         font-size: $fs-0 - 2;
         line-height: 1.4em;
+    }
+    @include respond-to('md') {
+        &.large{
+            font-size: $fs-0 + 4;
+            line-height: 1.4em;
+        }
+        &.extra-large{
+            font-size: $fs-1 - 3;
+            line-height: 1.4em;
+        }
+        &.small{
+            opacity: 0.75;
+            font-size: $fs-0 - 2;
+            line-height: 1.4em;
+        }
     }
 }
