@@ -2,11 +2,12 @@
     background-color: $color-blue-0;
     color: $color-white-0;
     .creator_content{
-        width: 78%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         .creator_text{
+            width: 48%;
             position: relative;
             max-width: 500px;
             .creator_logo{
@@ -22,8 +23,27 @@
             }
         }
         .creator_img{
+            width: 48%;
             margin-right: 50px;
             width: 460px;
+        }
+    }
+    @include respond-to('md'){
+        .creator_content{
+            flex-direction: column;
+            align-items: flex-start;
+            .creator_text{
+            width: 100%;
+
+                .creator_logo{
+                    display: none;
+                }
+            }
+            .creator_img{
+                width: 100%;
+                max-width: 50%;
+                margin-bottom: $mg-4;
+            }
         }
     }
 }
