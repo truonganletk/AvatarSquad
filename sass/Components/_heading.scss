@@ -16,5 +16,10 @@
     }
     @include respond-to('md') {
         font-size: $fs-5;
+        &.h2{
+            margin-bottom: $mg-2;
+            font-size: $fs-4 + 4;
+            line-height: 1.2em;
+        }
     }
 }

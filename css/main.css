@@ -272,6 +272,24 @@ header .header_content .nav_menu_button i {
 .about .about_content .about_img {
   margin-right: 50px;
 }
+@media (max-width: 992px) {
+  .about .about_content .about_img {
+    margin-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .about .about_content {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .about .about_content .about_text .about_logo {
+    display: none;
+  }
+  .about .about_content .about_img {
+    max-width: 50%;
+    margin-bottom: 40px;
+  }
+}
 
 .slider {
   overflow: hidden;
@@ -635,6 +653,11 @@ footer .footer_grid .footer_social a i:hover {
 @media (max-width: 768px) {
   .heading {
     font-size: 60px;
+  }
+  .heading.h2 {
+    margin-bottom: 16px;
+    font-size: 36px;
+    line-height: 1.2em;
   }
 }
 
