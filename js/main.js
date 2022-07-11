@@ -29,6 +29,12 @@ function transX_left() {
     }
 }
 
+
+window.addEventListener("scroll", function(){
+  var itemrotate = document.querySelector(".rotate");
+  itemrotate.style.transform = "rotate(" + (window.pageYOffset/50-50) + "deg)";
+});
+
   
 window.addEventListener("scroll", transX_right);
 window.addEventListener("scroll", transX_left);
